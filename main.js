@@ -23,13 +23,13 @@ const drawGame = () => {
 const showWinner = (userWin) => {
     if(userWin){
         userScore++;
-        msg.innerText="You Won!!"
+        msg.innerText="You Won!! Continue playing."
         msg.style.backgroundColor="green";
         userScorePara.innerText=userScore;
     }
     else{
         compScore++;
-        msg.innerText="You Lost!!"
+        msg.innerText="You Lost!! Continue playing."
         msg.style.backgroundColor="red";
         compScorePara.innerText=compScore;
     }
