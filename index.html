@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
     <title>S.P.S</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="p-4 flex justify-center bg-blue-300">
-        <h1 class="text-lg font-medium">Stone Paper Scissors</h1>
+      <h1 class="text-lg font-medium">Stone Paper Scissors</h1>
     </div>
     <div class="choices mt-8 flex justify-center gap-4 p-4">
-        <div class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black" id="rock">
-            <img class="rounded-full w-40 h-40" src="./pictures/rock.png">
-        </div>
-        <div class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black" id="paper">
-            <img class="rounded-full w-40 h-40" src="./pictures/paper.png">
-        </div>
-        <div class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black" id="scissors">
-            <img class="rounded-full w-40 h-40" src="./pictures/scissors.png">
-        </div>
+      <div
+        class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black"
+        id="rock"
+      >
+        <img class="rounded-full w-40 h-40" src="./pictures/rock.png" />
+      </div>
+      <div
+        class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black"
+        id="paper"
+      >
+        <img class="rounded-full w-40 h-auto" src="./pictures/paper.png" />
+      </div>
+      <div
+        class="choice w-44 h-44 duration-200 flex justify-center rounded-full items-center cursor-pointer hover:bg-black"
+        id="scissors"
+      >
+        <img class="rounded-full w-40 h-40" src="./pictures/scissors.png" />
+      </div>
     </div>
-    <div class="flex justify-center gap-6 text-lg  mt-6">
-            <div class="flex flex-col items-center justify-center ">
-                <p class="text-2xl font-bold" id="comp-score">0</p>
-                <p>Computer</p>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-                <p class="text-2xl font-bold" id="user-score">0</p>
-                <p>You</p>
-            </div>
+    <div class="flex justify-center gap-6 text-lg mt-6">
+      <div class="flex flex-col items-center justify-center">
+        <p class="text-2xl font-bold" id="comp-score">0</p>
+        <p>Computer</p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <p class="text-2xl font-bold" id="user-score">0</p>
+        <p>You</p>
+      </div>
     </div>
-    <div class="flex justify-center gap-6 text-xl font-medium mt-8 text-white">
-        <p id="msg" class="bg-[#333] rounded-xl p-4 italic">Make your move</p>
+    <div
+      class="flex py-4 justify-center gap-6 text-xl font-medium mt-8 text-white"
+    >
+      <p id="msg" class="bg-[#333] rounded-xl p-4 italic">Make your move</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
