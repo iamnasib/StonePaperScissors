@@ -7,8 +7,8 @@ let msg = document.querySelector("#msg");
 
 let userScorePara = document.querySelector("#user-score");
 let compScorePara = document.querySelector("#comp-score");
-console.log(`Developed by Nasib Farooq
-username on all platforms :@iamnasib`);
+console.log(`Developed by Nasib Farooq,
+Username on all platforms :@iamnasib`);
 const genCompChoice = () => {
   const options = ["rock", "paper", "scissors"];
   const randIdx = Math.floor(Math.random() * 3);
